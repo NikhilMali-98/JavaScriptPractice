@@ -1,0 +1,27 @@
+<script>
+    var product = 
+    {
+        name : "Diry-Milk",    //name = key & jeans = literal and both called temp.literal
+        price: 100,
+        brand: "Choclate",
+        path: "https://m.media-amazon.com/images/I/61PzgeMkUOL._AC_UL400_.jpg"
+    }
+    console.log(typeof(product));
+    console.log(product);
+    console.log(product.price);      //2 ways to acces property this one is 1st
+    console.log(product["price"]);  // this is 2nd one
+
+    document.write(`
+                      <div>
+                         <img src="${product.path}" alt="">
+                          <h2>${product.price}</h2>
+                         <p>${product.name}}</p>
+                      </div>
+                `)
+</script>
+
+<style>
+      div { width: 300px;}
+      img{ width: 100%;}
+</style>
+

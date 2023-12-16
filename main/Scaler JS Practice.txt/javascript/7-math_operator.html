@@ -1,0 +1,31 @@
+<script>
+    var x =10
+    var y = 20
+    console.log(`addition = ${x+y}`)
+    console.log(x-y);
+    console.log(x*y);
+    console.log(y/x);
+    console.log(y%x);
+
+    //celceous to farenhead
+    var temp =40
+    console.log((temp*9/5)+32);
+
+    //roi cal
+    var amount = 10000
+    var duration = 30
+    var roi = 8
+    console.log((amount*duration*roi)/100);
+
+    //home loan EMI cal
+    var amount = 10000000
+    var duration = 30
+    var roi = 8
+    var int = roi/12/100
+    var month = duration*12
+
+    emi = amount*int*(1+int)**month/((1+int)**month-1)
+    console.log(emi);
+</script>
+
+<!-- cal remainder without %  = euclidean algorithm -->

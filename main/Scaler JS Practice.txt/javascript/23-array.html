@@ -1,0 +1,25 @@
+<script>
+    var brands = ["nikhil","aviraj","sanket",'divya',`manali`]   
+    console.log(brands);
+    console.log(brands[0]);
+    console.log(brands[1]);
+
+    var i = 0
+    while(i<brands.length)
+    {
+        document.write(` 
+        <li>
+            <input type = 'checkbox'>
+            ${brands[i]}
+        </li>
+        `)
+        i++
+    }
+</script>
+
+<style>
+    li
+    {
+        list-style: none;
+    }
+</style>
